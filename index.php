@@ -1,8 +1,6 @@
 <?php
 get_header();
 
-echo "Hey, this is MIZUHO";
-
 if (have_posts()) :
     while (have_posts()) :
         the_post();
@@ -11,8 +9,6 @@ if (have_posts()) :
         the_content();
         the_category();
     endwhile;
-    else :
-        echo "No posts";
     endif;
 
 get_footer();
