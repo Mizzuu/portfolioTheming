@@ -5,7 +5,7 @@ Description: Theme for my Portfolio
 Version: 0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: portfolio
+Text Domain: mizuhoPortofolio
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
@@ -18,4 +18,36 @@ Table of Contents
 5. 
 6. 
 */
+img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+* {
+  margin: 0;
+}
+
+.site-header {
+  margin-bottom: 1rem;
+  padding-bottom: .5rem;
+}
+
+.site-header .searchform {
+  text-align: right;
+}
+
+.site-header .searchform input {
+  border-radius: 15px;
+}
+
+.home .intro-container {
+  margin: 2rem 1rem;
+}
+
+.home .intro2 {
+  font-weight: 600;
+  font-size: 2rem;
+}
 /*# sourceMappingURL=style.css.map */

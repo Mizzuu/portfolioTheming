@@ -35,7 +35,7 @@ function themename_custom_logo_setup() {
 function mizuhoPortofolio_scripts_styles(){
    wp_enqueue_style('mizuhoPortofolio_style', get_stylesheet_uri());
 
-   wp_enqueue_style( 'mizuhoPortofolio_style_googlefonts', 'https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Newsreader:wght@400;700', array(), null );
+   wp_enqueue_style( 'mizuhoPortofolio_style_googlefonts', 'https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Red+Hat+Mono:ital,wght@0,400;1,600', array(), null );
 
    wp_enqueue_style( 'mizuhoPortofolio_font_awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' );
 }

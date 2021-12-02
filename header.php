@@ -10,8 +10,7 @@
 
 <body <?php body_class(); ?>>
 
-    <header class="siter-header">
-        <?php get_search_form(); ?>
+    <header class="site-header">
 
         <!-- Main Menu Location -->
         <?php
@@ -22,6 +21,9 @@
             'menu_class'       =>  'main-menu',
         ));
         ?>
+
+        <?php get_search_form(); ?>
+
     </header>
 
 
