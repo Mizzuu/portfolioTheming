@@ -6,7 +6,7 @@ get_header();
 
 
 <div class="introduction">
-<?php
+  <?php
 
   //intro query
   $intro_query = new WP_Query(
@@ -31,27 +31,33 @@ get_header();
 
 
 <div class="myworks">
-<?php
+  <div class="heading">
+    <h2>My works</h2>
+  </div>
+  <div class="post-parent">
 
-  //myworks query
-  $myworks_query = new WP_Query(
-    array(
-      'tag'   =>   'myworks',
-      'posts_per_page'  =>   '4',
-      'orderby'         =>   'rand',
-    )
-  );
+    <?php
 
-  if ($myworks_query->have_posts()) :
-    while ($myworks_query->have_posts()) :
-      $myworks_query->the_post();
-      get_template_part('template-parts/content-myworks');
-    endwhile;
-  else :
-    get_template_part('template-parts/content-none.php');
-  endif;
+    //myworks query
+    $myworks_query = new WP_Query(
+      array(
+        'tag'   =>   'myworks',
+        'posts_per_page'  =>   '4',
+        'orderby'         =>   'rand',
+      )
+    );
 
-  ?>
+    if ($myworks_query->have_posts()) :
+      while ($myworks_query->have_posts()) :
+        $myworks_query->the_post();
+        get_template_part('template-parts/content-myworks');
+      endwhile;
+    else :
+      get_template_part('template-parts/content-none.php');
+    endif;
+
+    ?>
+  </div>
 </div>
 
 

@@ -1,9 +1,122 @@
 .home {
-    .intro-container {
-        margin: 2rem 1rem;
+    font-family: $font_main;
+
+    .introduction {
+        margin: 2.5rem auto;
+
+        .profileImg {
+            text-align: center;
+            animation-name: p-img;
+            animation-duration: 4s;
+
+            img {
+                width: 90%;
+                height: auto;
+            }
+        }
+
+        @keyframes p-img {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .intro-container {
+            text-align: center;
+            margin: 2rem auto;
+            font-family: $font_else;
+
+            .intro1,
+            .intro3 {
+                font-size: 1.5rem;
+            }
+
+            .intro2 {
+                font-weight: 600;
+                font-size: 2.5rem;
+                animation-name: p-img;
+                animation-duration: 4s;
+            }
+        }
     }
-    .intro2 {
-        font-weight: 600;
-        font-size: 2rem;
+
+    .myworks {
+        margin: 5rem auto 0.5rem auto;
+
+        .heading {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .post {
+            margin-bottom: 3rem;
+
+            .post-title {
+                margin-left: 1.3rem;
+
+                a {
+                    text-decoration: none;
+                    color: $sub_headings;
+                }
+            }
+
+            .post-thumbnail {
+                text-align: center;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 800px) {
+        .introduction {
+            .profileImg {
+                img {
+                    width: 65%;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        .introduction {
+            .descme {
+                display: grid;
+                grid-template-columns: 1.5fr 1fr;
+
+                .profileImg {
+                    img {
+                        width: 80%;
+                    }
+                }
+
+                .intro-container {
+                    padding-top: 10rem;
+                }
+            }
+        }
+
+        .post-parent {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 0.5rem;
+            margin: auto 1rem;
+
+            .post {
+                .post-thumbnail {
+                    img {
+                        max-height: 400px;
+                        width: auto;
+                    }
+                }
+            }
+        }
     }
 }
