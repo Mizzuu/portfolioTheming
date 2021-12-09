@@ -66,6 +66,8 @@
 
             .post-thumbnail {
                 text-align: center;
+                display: flex;
+                align-items: center;
 
                 img {
                     max-width: 100%;
@@ -83,6 +85,12 @@
                 }
             }
         }
+
+        .myworks {
+            .post-thumbnail {
+                margin: 0 0.5rem;
+            }
+        }
     }
 
     @media screen and (min-width: 1000px) {
@@ -93,7 +101,7 @@
 
                 .profileImg {
                     img {
-                        width: 80%;
+                        width: 70%;
                     }
                 }
 
@@ -107,16 +115,22 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-gap: 0.5rem;
-            margin: auto 1rem;
+            // margin: auto 1rem;
 
             .post {
                 .post-thumbnail {
                     img {
-                        max-height: 400px;
+                        max-height: 600px;
                         width: auto;
                     }
                 }
             }
+        }
+    }
+
+    @media screen and (min-width: 1400px) {
+        .post-parent {
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
 }

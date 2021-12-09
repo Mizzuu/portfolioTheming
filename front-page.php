@@ -42,7 +42,7 @@ get_header();
     $myworks_query = new WP_Query(
       array(
         'tag'   =>   'myworks',
-        'posts_per_page'  =>   '4',
+        'posts_per_page'  =>   '6',
         'orderby'         =>   'rand',
       )
     );

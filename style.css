@@ -164,6 +164,9 @@ Table of Contents
   .home .introduction .profileImg img {
     width: 65%;
   }
+  .home .myworks .post-thumbnail {
+    margin: 0 0.5rem;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -174,7 +177,7 @@ Table of Contents
         grid-template-columns: 1.5fr 1fr;
   }
   .home .introduction .descme .profileImg img {
-    width: 80%;
+    width: 70%;
   }
   .home .introduction .descme .intro-container {
     padding-top: 10rem;
@@ -185,11 +188,17 @@ Table of Contents
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     grid-gap: 0.5rem;
-    margin: auto 1rem;
   }
   .home .post-parent .post .post-thumbnail img {
-    max-height: 400px;
+    max-height: 600px;
     width: auto;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .home .post-parent {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
