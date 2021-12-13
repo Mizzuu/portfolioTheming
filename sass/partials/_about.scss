@@ -1,0 +1,83 @@
+.page-id-190 {
+    // font-family: $font_main;
+
+    .site-main {
+        color: #f2f2f2;
+
+        .aboutme {
+            color: black;
+            .about-container {
+                .about_title {
+                    text-align: center;
+                    font-family: $font_else;
+                    margin: 1.5rem auto;
+                    font-size: 3.5rem;
+                    font-weight: 600;
+                }
+
+                .about_paragraph {
+                    margin: 1.5rem;
+                }
+            }
+
+            @media screen and (min-width: 600px) {
+                .about-container {
+                    .about_paragraph {
+                        margin: 3rem 4rem;
+                    }
+                }
+            }
+
+            @media screen and (min-width: 1000px) {
+                .about-container {
+                    .about_paragraph {
+                        margin: 3rem 10rem;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+
+        .myskill {
+            color: black;
+            margin-top: 7rem;
+
+            .heading {
+                text-align: center;
+                margin: 4rem auto 2rem auto;
+                font-weight: 600;
+                font-family: $font_else;
+                font-size: 2rem;
+            }
+
+            .skill_parent {
+                margin: 1rem auto;
+
+                .type-skill {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 2rem;
+
+                    .dot-container {
+                        display: flex;
+                        justify-content: space-evenly;
+                        width: 8rem;
+                    }
+                }
+            }
+
+            @media screen and (min-width: 600px) {
+                .skill_parent {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+
+            @media screen and (min-width: 1000px) {
+                .skill_parent {
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+            }
+        }
+    }
+}

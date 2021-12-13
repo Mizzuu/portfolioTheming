@@ -2,12 +2,12 @@
     font-family: $font_main;
 
     .introduction {
-        margin: 2.5rem auto;
+        margin: 12rem auto;
 
         .profileImg {
             text-align: center;
             animation-name: p-img;
-            animation-duration: 4s;
+            animation-duration: 5s;
 
             img {
                 width: 90%;
@@ -48,15 +48,17 @@
 
         .heading {
             text-align: center;
-            margin-bottom: 1rem;
+            margin-bottom: 4rem;
             font-weight: 600;
+            font-family: $font_else;
         }
 
         .post {
             margin-bottom: 3rem;
 
             .post-title {
-                margin-left: 1.3rem;
+                margin-left: 1.5rem;
+                margin-bottom: 0.5rem;
 
                 a {
                     text-decoration: none;
@@ -65,19 +67,18 @@
             }
 
             .post-thumbnail {
-                text-align: center;
-                display: flex;
-                align-items: center;
+                margin: 0 auto;
 
                 img {
                     max-width: 100%;
-                    height: auto;
+                    height: 100%;
+                    object-fit: contain;
                 }
             }
         }
     }
 
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 600px) {
         .introduction {
             .profileImg {
                 img {
@@ -87,8 +88,14 @@
         }
 
         .myworks {
-            .post-thumbnail {
-                margin: 0 0.5rem;
+            .heading {
+                font-size: 2rem;
+            }
+            .post {
+                .post-thumbnail {
+                    text-align: center;
+                    margin: 0 6rem;
+                }
             }
         }
     }
@@ -114,14 +121,33 @@
         .post-parent {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-gap: 0.5rem;
-            // margin: auto 1rem;
+            margin: auto 1rem;
 
             .post {
+                margin: 3rem auto;
+                .post-title {
+                    margin-left: 0;
+                    text-align: center;
+
+                    a {
+                        color: black;
+                    }
+                }
                 .post-thumbnail {
+                    width: 400px;
+                    height: 300px;
+                    margin: 0;
                     img {
-                        max-height: 600px;
-                        width: auto;
+                        max-width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        filter: grayscale(10);
+                        transition: transform 0.8s ease;
+                    }
+                    img:hover {
+                        filter: none;
+                        transform: scale(1.1, 1.1);
+                        // box-shadow: 10px 10px 5px grey;
                     }
                 }
             }

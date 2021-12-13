@@ -1,12 +1,15 @@
-* {
+body {
     margin: 0;
+    background-color: #f2f2f2;
+    font-family: $font_main;
 }
 
 .site-header {
     margin-bottom: 0 0 1rem 0;
     padding-bottom: 0.5rem;
-    background-color: $header_bg;
+    border-bottom: #c4c4c4 solid 2px;
     padding-top: 1rem;
+    font-family: $font_else;
 
     .menu-container {
         text-align: center;
@@ -26,11 +29,8 @@
                 a {
                     text-decoration: none;
                     color: $white;
+                    background-color: $menuBg_border;
                 }
-            }
-
-            .menu-item:hover {
-                background-color: $menu_hover;
             }
         }
     }
@@ -44,6 +44,44 @@
             input {
                 border-radius: 15px;
                 font-family: $font_main;
+            }
+        }
+    }
+
+    @media screen and (min-width: 600px) {
+        .menu-container {
+            .main-menu {
+                .menu-item {
+                    margin: 1rem auto;
+                    width: 65%;
+                    height: 2rem;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        .menu-container {
+            .main-menu {
+                display: flex;
+                justify-content: space-around;
+                .menu-item {
+                    background-color: #f2f2f2;
+                    a {
+                        color: black;
+                        background-color: #f2f2f2;
+                    }
+                }
+                .menu-item:hover {
+                    background-color: #e7e7e7;
+                    border-radius: 0;
+                    height: 100%;
+
+                    a {
+                        background-color: #e7e7e7;
+                    }
+                }
             }
         }
     }

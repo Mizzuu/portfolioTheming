@@ -1,0 +1,63 @@
+.page-id-122 {
+    font-family: $font_main;
+    h1 {
+        text-align: center;
+        font-family: $font_else;
+        margin: 1.5rem auto;
+        font-size: 3rem;
+    }
+    .site-main {
+        p {
+            margin: 2rem 10%;
+            @media screen and (min-width: 600px) {
+                margin: 2rem 20%;
+            }
+            @media screen and (min-width: 1000px) {
+                font-size: 1.5rem;
+                margin: 2rem 25%;
+            }
+        }
+        // required comment
+        .nf-form-cont {
+            margin: 0 0.5rem;
+            .nf-form-fields-required {
+                font-size: 0.7rem;
+                letter-spacing: -0.5px;
+                margin-bottom: 0.5rem;
+                color: $sub_headings;
+            }
+        }
+        .nf-field-label {
+            label {
+                font-size: 0.8rem;
+            }
+        }
+        .nf-field-element {
+            text-align: center;
+            #nf-field-8 {
+                font-family: $font_main;
+            }
+        }
+        @media screen and (min-width: 1000px) {
+            .nf-form-cont {
+                margin: 0 0.5rem;
+                .nf-form-fields-required {
+                    font-size: 0.7rem;
+                    letter-spacing: -0.5px;
+                    margin-left: 15%;
+                }
+                .nf-field {
+                    .field-wrap {
+                        width: 80%;
+                        margin: 1rem auto;
+                    }
+                }
+                .nf-field-label {
+                    label {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,106 @@
+.single-post {
+    .site-main {
+        article {
+            .entry-title {
+                font-family: $font_else;
+                margin: 1rem auto 1rem 1.5rem;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+
+            .entry-thumbnail {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .entry-content {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                p {
+                    margin: 1.5rem;
+                }
+            }
+
+            .entry-footer {
+                text-align: center;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin-top: 3rem;
+
+                h4 {
+                    font-family: $font_else;
+                    margin: 1rem auto 0 auto;
+                }
+
+                a {
+                    font-size: 0.7rem;
+                    text-decoration: none;
+                    color: $sub_headings;
+                    cursor: pointer;
+                }
+            }
+
+            @media screen and (min-width: 600px) {
+                .entry-thumbnail {
+                    text-align: center;
+                    img {
+                        width: 85%;
+                    }
+                }
+
+                .entry-content {
+                    .size-large {
+                        text-align: center;
+
+                        img {
+                            width: 85%;
+                        }
+                    }
+
+                    p {
+                        margin: 2rem 5rem;
+                    }
+                }
+            }
+
+            @media screen and (min-width: 1000px) {
+                .entry-thumbnail {
+                    img {
+                        width: 65%;
+                    }
+                }
+
+                .entry-content {
+                    .size-large {
+                        img {
+                            width: 65%;
+                        }
+                    }
+
+                    p {
+                        margin: 4rem 10rem;
+                    }
+                }
+
+                .entry-footer {
+                    a:hover {
+                        color: black;
+                    }
+                }
+            }
+
+            @media screen and (min-width: 1400px) {
+                .entry-content {
+                    p {
+                        margin: 5rem 16rem;
+                    }
+                }
+            }
+        }
+    }
+}
