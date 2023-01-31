@@ -1,6 +1,5 @@
 <?php ?>
 
-<!-- <div class="post-parent"> -->
     <div <?php post_class(); ?>>
         <div class="post-title">
             <a href="<?php the_permalink(); ?>">
@@ -14,4 +13,3 @@
             </a>
         </div>
     </div>
-<!-- </div> -->

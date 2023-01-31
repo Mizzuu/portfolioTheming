@@ -137,19 +137,6 @@ body {
   background-color: #000;
 }
 
-.site-header .searchform {
-  text-align: right;
-}
-
-.site-header .searchform div {
-  margin-right: 0.5rem;
-}
-
-.site-header .searchform div input {
-  border-radius: 15px;
-  font-family: "Red Hat Mono", monospace;
-}
-
 @media screen and (min-width: 600px) {
   .site-header .menu-container .main-menu .menu-item {
     margin: 1rem auto;
@@ -437,6 +424,41 @@ body {
   margin: 1.5rem auto;
   font-size: 3.5rem;
   font-weight: 600;
+  position: relative;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+@-webkit-keyframes slidein {
+  0% {
+    left: -50%;
+    top: 0px;
+  }
+  50% {
+    left: 30%;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    left: -50%;
+    top: 0px;
+  }
+  50% {
+    left: 30%;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
 }
 
 .page-id-190 .site-main .aboutme .about-container .about_paragraph {

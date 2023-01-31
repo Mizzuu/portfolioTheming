@@ -1,5 +1,4 @@
 .page-id-190 {
-    // font-family: $font_main;
 
     .site-main {
         color: #f2f2f2;
@@ -13,7 +12,16 @@
                     margin: 1.5rem auto;
                     font-size: 3.5rem;
                     font-weight: 600;
+                    position: relative;
+                    animation-name: slidein;
+                    animation-duration: 4s;
                 }
+
+                @keyframes slidein {
+                    0%   {left:-50%; top:0px;}
+                    50%  {left:30%; top:0px;}
+                    100% {left:0px; top:0px;}
+                  }
 
                 .about_paragraph {
                     margin: 1.5rem;
